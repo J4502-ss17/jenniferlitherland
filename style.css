@@ -63,6 +63,19 @@ body {
   color: #666666;
 }
 
+#nav2 a:active {
+  text-decoration: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #666666;
+}
+
+#nav2 li{
+  color: #666666
+}
+
+
+
+
 .caption {
   color:black;
   font-family: 'Roboto', Arial, sans-serif;
