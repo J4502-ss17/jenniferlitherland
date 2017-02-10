@@ -57,7 +57,8 @@ body {
   background-color:#EEAA7B;
 }
 
-#nav2 li{
+#nav2 li a:visited{
+  text-decoration: none;
   font-family: 'Open Sans', Arial, sans-serif;
   color: #666666;
 }
