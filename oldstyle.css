@@ -2,22 +2,15 @@
 
 p{
   color: #666666;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
-
 
 h1{
-  color: #07889B;
-  font-family: 'Suez One', Georgia, serif;
-}
-
-h2{
-  color: #07889B;
-  font-family: 'Suez One', Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 body {
-  background-color: #EEAA7B;
+  background-color: #f9ed63;
 }
 
 #container {
@@ -41,43 +34,35 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-
 #nav a:link, #nav a:visited {
   display: block;
   color: #ffffff;
-  background-color: #66B9BF;;
+  background-color: #f963ef;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #nav a:hover, #nav a:active {
-  background-color:#EEAA7B;
-}
-
-#nav2 li{
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #666666;
+  background-color:#ffbffa;
 }
 
 .caption {
   color:black;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   margin-top: 0;
   font-style: italic;
   font-size: 0.8em;
   text-align:left;
-  color: #666666;
 }
 
 #footer {
   color:black;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 0.8em;
   border-top: 1px solid black;
-  color: #666666;
 }
 
 img {
