@@ -1,110 +1,164 @@
-/*styles go here*/
-
-p{
-  color: #666666;
-  font-family: 'Open Sans', Arial, sans-serif;
-}
-
-
-h1{
-  color: #07889B;
-  font-family: 'Suez One', Georgia, serif;
-}
-
-h2{
-  color: #07889B;
-  font-family: 'Suez One', Georgia, serif;
-}
+/*Typography*/
 
 body {
-  background-color: #EEAA7B;
+    font-family: 'Suez One', Georgia, serif;
 }
 
-#container {
-  width: 95%;
-  /*margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin: 0 auto 0 auto;*/
-  margin: 0 auto;
+h1 {
+    font-size: 2em;
+    color: #07889B;
+    font-family: 'Suez One', Georgia, serif;
 }
 
-#nav {
-  padding: 0;
-  list-style-type: none;
+p {
+    font-size: 1em;
+    color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
-#nav li{
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #ccc;
+/*Navigation styles*/
+
+.navigation{
+	list-style: none;
+	margin: 0;
+	background: #66B9BF;
+    padding: 0;
+    display: flex;
+	flex-flow: column;
 }
 
-
-#nav a:link, #nav a:visited {
-  display: block;
-  color: #ffffff;
-  background-color: #66B9BF;;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 4px;
-  font-family: 'Open Sans', Arial, sans-serif;
+.navigation a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
 }
 
-#nav a:hover, #nav a:active {
-  background-color:#EEAA7B;
-}
-
-#nav2 li{
-  color: #666666
-}
-
-#nav3 li a:visited{
-  text-decoration: none;
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #666666;
-}
-
-#nav3 a:active {
-  text-decoration: none;
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #666666;
-}
-
-#nav4 li a:visited{
-  text-decoration: none;
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #666666;
-}
-
-#nav4 a:active {
-  text-decoration: none;
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #666666;
+.navigation li:last-of-type a{
+  border-bottom: none;
 }
 
 
-
-.caption {
-  color:black;
-  font-family: 'Roboto', Arial, sans-serif;
-  margin-top: 0;
-  font-style: italic;
-  font-size: 0.8em;
-  text-align:left;
-  color: #666666;
-}
-
-#footer {
-  color:black;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 0.8em;
-  border-top: 1px solid black;
-  color: #666666;
-}
+/*Image width*/
 
 img {
-  border: none;
+    width: 100%;
+}
+
+/*Colors for different parts of page */
+
+header {
+  background: tomato;
+}
+
+footer {
+  background:  tomato;
+}
+
+article {
+  background: #07889B;
+}
+
+.aside-1 {
+  background: #EEAA7B;
+}
+
+
+/*Setting up flexible boxes for our content*/
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+/*These styles activate when the page is larger than 800px wide*/
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: black;
+    }
+
+    aside {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .aside-1 {
+        order: 1;
+    }
+
+    article {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+    /*These styles apply to the floated image technique*/
+
+            /*========================
+
+            img {
+                width: 45%;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .first {
+                margin-top: 0;
+            }
+
+            =======================*/
+
+    /*These styles apply to the Flexbox image technique */
+
+    article {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+    /*This code is for the first image attempt -- the object-fit property*/
+    /*img {
+        width: 45%;
+        object-fit: contain;
+    }*/
+
+    .image {
+        width: 45%;
+        margin-right: 10px;
+    }
+
+    .story {
+        width: 45%;
+    }
+
+    .first {
+        margin-top: 0;
+    }
 }

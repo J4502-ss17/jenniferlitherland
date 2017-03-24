@@ -1,0 +1,110 @@
+/*styles go here*/
+
+p{
+  color: #666666;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+h1{
+  color: #07889B;
+  font-family: 'Suez One', Georgia, serif;
+}
+
+h2{
+  color: #07889B;
+  font-family: 'Suez One', Georgia, serif;
+}
+
+body {
+  background-color: #EEAA7B;
+}
+
+#container {
+  width: 95%;
+  /*margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin: 0 auto 0 auto;*/
+  margin: 0 auto;
+}
+
+#nav {
+  padding: 0;
+  list-style-type: none;
+}
+
+#nav li{
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+
+#nav a:link, #nav a:visited {
+  display: block;
+  color: #ffffff;
+  background-color: #66B9BF;;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#nav a:hover, #nav a:active {
+  background-color:#EEAA7B;
+}
+
+#nav2 li{
+  color: #666666
+}
+
+#nav3 li a:visited{
+  text-decoration: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #666666;
+}
+
+#nav3 a:active {
+  text-decoration: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #666666;
+}
+
+#nav4 li a:visited{
+  text-decoration: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #666666;
+}
+
+#nav4 a:active {
+  text-decoration: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #666666;
+}
+
+
+
+.caption {
+  color:black;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin-top: 0;
+  font-style: italic;
+  font-size: 0.8em;
+  text-align:left;
+  color: #666666;
+}
+
+#footer {
+  color:black;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 0.8em;
+  border-top: 1px solid black;
+  color: #666666;
+}
+
+img {
+  border: none;
+}
