@@ -55,3 +55,58 @@ body{
   color:white;
   padding:10px;
 }
+
+@media screen and (min-width: 600px) {
+  #pageBody {
+    display: flex;
+    flex-flow: row;
+  }
+
+  #content{
+    flex: 3 auto;
+    margin-right: 20px;
+  }
+
+  #sidebar{
+    flex: 1 auto;
+  }
+
+  #nav li{
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    display: flex;
+    flex-flow: row;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-flow: column;
+    margin-right: 20px;
+  }
+
+  #nav li {
+    border-bottom: 1px solid rgba(255,255,255,0);
+  }
+
+  #nav li:last-child {
+    border-bottom: none;
+  }
+
+  #content {
+    order: 1;
+    margin: 10px;
+  }
+
+  #sidebar {
+    order: 3;
+    margin: 10px;
+  }
+
+  #nav {
+    order:2;
+    margin: 10px;
+  }
