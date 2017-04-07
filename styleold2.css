@@ -1,23 +1,23 @@
 body{
-  font-family:  'Roboto', Arial, sans-serif;
+  font-family: "Georgia", serif;
 }
 
 #header, #nav, #footer, h1, h2, h3{
-  font-family: 'Suez One', Georgia, serif;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 #header .inner{
-  background: #07889B;
+  background: #F38630;
   padding:10px;
 }
 
 #content .inner{
-  background: #66B9BF;
+  background: #E0E4CC;
   padding:10px;
 }
 
 #sidebar .inner{
-  background: #07889B;
+  background: #69D2E7;
   color:white;
   padding:10px;
 }
@@ -26,7 +26,7 @@ body{
   display:flex;
   flex-flow:row;
   justify-content: space-around;
-  background: #EEAA7B;
+  background: #A7DBD8;
   color: #333;
   list-style-type: none;
   padding:10px;
@@ -51,13 +51,9 @@ body{
 }
 
 #footer{
-  background: #EEAA7B;
+  background: #FA6900;
   color:white;
   padding:10px;
-}
-
-img, .caption {
-    display: none;
 }
 
 @media screen and (min-width:600px){
@@ -77,10 +73,6 @@ img, .caption {
 
   #nav li{
     border-right:none;
-  }
-
-  img, .caption {
-      display: block;
   }
 
 }
@@ -126,6 +118,5 @@ img, .caption {
   #footer{
     order:4;
   }
-
 
 }
