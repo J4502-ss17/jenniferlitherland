@@ -24,6 +24,16 @@ body{
   padding:10px;
 }
 
+#links a:link, #links a:visited {
+  display: block;
+  color: #EEAA7B;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px;
+  font-family:  'Roboto', Arial, sans-serif;
+}
+
 img, .caption {
     display: none;
 }
